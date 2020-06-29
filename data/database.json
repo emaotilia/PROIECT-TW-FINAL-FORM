@@ -1,0 +1,41 @@
+{
+    "nextId": 7,
+    "studenti": [
+        {
+            "id": 1,
+            "nume": "Tache",
+            "prenume": "Ion",
+            "amount": "557"
+        },
+        {
+            "id": 2,
+            "nume": "Popescu",
+            "prenume": "Gigel",
+            "amount": "10"
+        },
+        {
+            "id": 3,
+            "nume": "Gogulescu",
+            "prenume": "Gogu",
+            "amount": "457"
+        },
+        {
+            "nume": "Zumzulesteanu",
+            "prenume": "George",
+            "amount": "10000",
+            "id": 4
+        },
+        {
+            "nume": "ema",
+            "prenume": "otilia",
+            "amount": "200",
+            "id": 5
+        },
+        {
+            "nume": "Zumzulesteanu",
+            "prenume": "George",
+            "amount": "30",
+            "id": 6
+        }
+    ]
+}

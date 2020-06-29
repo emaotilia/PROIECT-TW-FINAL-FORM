@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>OUR DONORS</title>
+    <meta charset="utf-8">
+</head>
+<body class="container">
+
+<!-- headerul care se repeta pagina de pagina -->
+<%- include("../views/header") %>
+
+<% console.log(locals.BD.studenti[2].id, typeof locals.BD) %>
+
+<% if (locals.BD) { %>
+    <table>
+        <tr>    
+            <th>id</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Amount</th>
+        </tr>
+        <% for (var i = 0; i < BD.studenti.length; i++) { %>
+            <tr>
+                <td><%= BD.studenti[i].id %></td>
+                <td><%= BD.studenti[i].nume %></td>
+                <td><%= BD.studenti[i].prenume %></td>
+                <td><%= BD.studenti[i].amount %></td>
+            </tr>    
+        <% } %>
+    </table>
+    <% } else { %>
+        <p>BE THE FIRST ONE</p>
+    <% } %>
+
+
+</body>
+</html>

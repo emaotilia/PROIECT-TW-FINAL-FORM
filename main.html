@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="background-color:#DCD9F9 ; padding: 0.5% 20%">
+
+  <script src="java_main.js"></script>
+
+
+  <div class="topnav" id="myTopnav">
+    <a class="logo" href="main.html"><img src="logo2.jpg" alt="logo"></a>
+
+    <div class="shop-dropdown">
+      <button class="dropbtn">Shop
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="shop-dropdown-content">
+        <a href="https://www.adoptapet.com/s/hamster-adoption">Adopt</a>
+        <a href="https://www.petsmart.com/learning-center/small-pet-care/hamster-checklist/A0048.html">Accessories</a>
+      </div>
+    </div>
+    <div class="about-dropdown">
+      <button class="dropbtn">About
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="about-dropdown-content">
+        <a href="contact.html">Contact & Donations</a>
+        <a href="futureprojects.html">Future projects</a>
+      </div>
+    </div>
+    <a href="login.html">Log In</a>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="mainfunction()">&#9776;</a>
+  </div>
+
+  <div class="flex-container">
+    <div>
+      <p id=demo_main_1>How to take care of your hamster in 9 easy steps:</p>
+    </div>
+  </div>
+
+  <img src="C:\Users\emaot\Documents\facultate\AN 1 take 2\tw\proiect\ham.png" id="center" />
+
+  <img src="C:\Users\emaot\Documents\facultate\AN 1 take 2\tw\proiect\sem.png" id="point" />
+
+
+
+
+  <div class="column" onclick="lista()">
+    <h3>*try to reverse the list*</h3>
+    <div id="lista">
+      <ol type="1">
+        <li> Choose a habitat</li>
+        <li> Put their habitat in the right place</li>
+        <li> Cover their habitat with a light cloth for the first few days</li>
+        <li> Wait a few days before trying to pick them up</li>
+        <li> Once they’re acclimated, think outside the box for feeding time</li>
+        <li> Clean and wash your hamster’s space regularly</li>
+        <li> Give them plenty of out-of-habitat time</li>
+        <li> Take time to bond with your hammie</li>
+        <li> Handle your pet with care</li>
+      </ol>
+    </div>
+  </div>
+  <div id="factDisplay">
+
+  </div>
+
+  <button onclick="newFact()">RANDOM FACT</button>
+
+
+</body>
+
+</html>

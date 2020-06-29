@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="contact_style.css">
+
+</head>
+
+<body onload="startTime()" ; style="background-color:#F9D9E6;">
+  <script src="java_contact.js"></script>
+  <div id="txt"></div>
+  <div class="center context-menu">
+    <p id="p1"><b>You can contact us here: </b></p>
+
+    <p><b>Email: </b>hamster@contact.com</p>
+
+    <p ondblclick="myFunction()"><b>Our Parteners: </b></p>
+
+    <p id="demo"></p>
+    
+    <script>
+      var partners  = ["A home for every small", "Pets Haven", "AnimalShop", "Nostalgia"];
+      document.getElementById("demo").innerHTML = partners ;
+      
+      function myFunction() {
+      partners .reverse();
+        document.getElementById("demo").innerHTML = partners ;
+      }
+      </script>
+
+    <p><b>Become a donor today:</b></p>
+
+    <form class="date" method="post">
+      <p>
+        <label>
+          Nume: <input type="text" name="nume" value="Zumzulesteanu">
+        </label>
+      </p>
+      <p>
+        <label>
+          Prenume: <input type="text" name="prenume" value="George">
+        </label>
+      </p>
+      <p>
+        <label>
+          Amount: <input type="number" id="amount" name="amount">
+        </label>
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+
+    </form>
+
+      <p><b>Please enter your date of birth:</b></p>
+
+
+    <div class = "up">
+      <br><br>
+      <div id = "varsta">
+        <div id="v">
+          <input type = "date" name = "varsta" id="data" placeholder="Date of birth...." required>
+
+          <input type = "button" value = "show age" onClick = "showAge()" id = "button">
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="div-context-menu" class="cls-context-menu">
+
+			<button>1</button>
+			<button>2</button>
+			<button>3</button>
+
+		</div>
+
+		<p id="random"></p>
+
+		<p id="timer"></p>
+
+
+		<button id="sort">Sort</button>
+
+		<button id="filtreaza">A</button>
+
+		<button id="resetare"> Refresh </button>
+
+		<div class="context-menu afis_template" id="afisJson"> </div>
+
+		<div id="but"> </div>
+
+		<div class="afis_template" id="afisare_template"> </div>
+
+
+</body>
+
+</html>
